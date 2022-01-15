@@ -1,0 +1,51 @@
+<html>
+ <head>
+ <title>PokerTH</title>
+ <style>
+     body {
+      background-color: rgb(16, 3, 34);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .formData {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: darkcyan;
+    }
+    form {
+    font-size: 30px;
+    }
+    form input {
+    margin-left: 10px;
+    font-size: 15px;
+    }
+    </style>
+ </head>
+ <body>
+    <div>
+        <a href="index_01_01.html">Cofnij</a>
+    </div>
+   <form action="mailto:kamil.przylepa@gmail.com" algin="center" method=”POST” 
+   enctype=”multipart/form-data” name=”EmailForm”>   
+    <div>
+    <label for="explicit-label-name"  ><span style="color:red;"> Autor: </span></label>
+   <input type="text" id="explicit-label-name" name="imie" value="Kamil Przylepa" disabled="disabled">
+    <div>
+    <label for="email"><span style="color:red;">Email: </span></label>
+    <input type="email" id="label-email" name="email" value="kamil.przylepa@gmail.com" disabled="disabled">
+    </div>
+    <div style="color: rgb(160, 221, 80);">
+     Twój email:
+    <input type=”text” size=”19″ name=”ContactName”><br>
+     Wiadomość:
+    <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
+    </textarea>
+    </div>
+   <div>
+    <button type="submit">wyślij</button>
+   </div>
+   </form>
+ </body>
+ </html>

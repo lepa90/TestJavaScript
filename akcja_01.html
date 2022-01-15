@@ -1,0 +1,29 @@
+<html>
+ <head>
+ <title>PokerTH</title>
+ </head>
+ <body>
+    <div id="akcja_01"></div>
+    <a href="/">Cofnij</a>
+    <script>
+        const akcjaList = document.getElementById('akcja_01')
+        new URLSearchParams(window.location.search).forEach((value,
+        name)=> {
+          akcjaList.append(name,':',value)
+          akcjaList.append(document.createElement('br'))
+        })
+        function validateform() {
+            let x = document.forms['asdf']['haslo'].value;
+            if (x == "") {
+                alert("wrong password or lognin");
+                return false;
+            }
+            else{
+                alert("poprawny login")
+            }
+        }
+        
+    </script>
+</body>
+</html>
+ </html>
